@@ -1,0 +1,27 @@
+{
+  "name": "dailynode",
+  "version": "1.0.0",
+  "description": "study node daily",
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lemondreamtobe/dailyNode.git"
+  },
+  "keywords": [
+    "node",
+    "studying",
+    "blog"
+  ],
+  "author": "lemon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lemondreamtobe/dailyNode/issues"
+  },
+  "homepage": "https://github.com/lemondreamtobe/dailyNode#readme"
+}
