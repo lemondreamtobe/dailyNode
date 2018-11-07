@@ -1,4 +1,11 @@
-// 服务器主模块
 var server = require("./start");
 var router = require("./router");
-server.start(router.route);
+var requestHandlers = require("./request");
+
+var handle = {}
+handle["/"] = requestHandlers.start;
+handle["/start"] = requestHandlers.start;
+handle["/upload"] = requestHandlers.upload;
+handle["/show"] = requestHandlers.show;
+
+server.start(router.route, handle);
