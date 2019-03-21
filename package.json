@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "study node daily",
   "main": "server.js",
-  "dependencies": {},
+  "dependencies": {
+    "formidable": "^1.2.1"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "test",
