@@ -1,3 +1,5 @@
+const handle = require('./request/index');
+
 function route(handle, pathname, response, request) {
   console.log("About to route a request for " + pathname);
   if (typeof handle[pathname] === 'function') {
@@ -10,4 +12,4 @@ function route(handle, pathname, response, request) {
   }
 }
 
-exports.route = route;
+exports.route = route.bind(null, handle); // 函数颗粒化
